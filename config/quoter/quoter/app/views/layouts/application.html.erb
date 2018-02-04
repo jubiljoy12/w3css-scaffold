@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quoter</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body class="w3-container">
+      <ul>
+        <a href="/static_pages/home" class="w3-btn w3-red">Home Here</a>
+        <a href="/">Mighty Quotes</a>
+        <a href="/static_pages/help" class="w3-btn w3-red">Help Here</a>
+        <a href="/static_pages/about"class="w3-btn w3-red">About here</a>
+    </ul>
+    
+    
+    
+    
+    <%= yield %>
+  </body>
+</html>
